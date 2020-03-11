@@ -7,6 +7,7 @@
 [github授权](https://developer.github.com/apps/building-oauth-apps/creating-an-oauth-app/使用github登录)
 [okhttp](https://square.github.io/okhttp/)
 [Mybatis](https://blog.mybatis.org/)
+[lombok](https://projectlombok.org/)
 ##工具
 
 
