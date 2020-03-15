@@ -13,4 +13,7 @@ public interface UserMapper {
 
     @Select("select * from NING.user where token = #{token}")
     User findByToken(String token);
+
+    @Select("select * from ning.user where id = #{id}")
+    User findById(Integer creator);
 }
