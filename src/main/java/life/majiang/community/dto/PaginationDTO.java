@@ -21,7 +21,6 @@ public class PaginationDTO {
     public void setPagination(Integer totalCount, Integer page, Integer size) {
         setTotalPage(totalCount,size);
         this.page = page;
-
         pages.add(page);
         for (int i =1;i<=3;i++){
             if (page-i>0){//当前页前面若有三个分页，则加入分页链接列表里，插到头的位置。
@@ -32,7 +31,6 @@ public class PaginationDTO {
                 pages.add(page+i);
             }
         }
-
 
         //是否展示上一页
         if (page ==1){
@@ -55,17 +53,12 @@ public class PaginationDTO {
             showFirstPage = true;
         }
 
-
         //是否展示尾页
         if (pages.contains(totalPage)){//page+size >totalPage
             showEndPage = false;
         }else {
             showEndPage = true;
         }
-
-
-
-
     }
 
     public void setTotalPage(Integer totalCount, Integer size) {
