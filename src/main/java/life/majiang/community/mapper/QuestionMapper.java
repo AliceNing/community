@@ -24,4 +24,7 @@ public interface QuestionMapper {
 
     @Select("select count(1) from ning.question where creator = #{userId}")
     Integer countByUserId(Integer userId);
+
+    @Select("select * from ning.question where id = #{id}")
+    Question getById(Integer id);
 }
