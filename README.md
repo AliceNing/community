@@ -19,7 +19,11 @@
 
 [Spring MVC文档](https://docs.spring.io/spring/docs/5.0.3.RELEASE/spring-framework-reference/web.html#mvc-handlermapping-interceptor)
 
+[Mybaits generator](http://mybatis.org/generator/configreference/javaModelGenerator.html)
 
-##工具
+##脚本
+```bash
+mvn -Dmybatis.generator.overwrite=true mybatis-generator:generate
+```
 
 
